@@ -52,7 +52,7 @@ app.post("/template", async (req: Request<{}, {}, TemplateRequestBody>, res: Res
             "Return either 'node' or 'react' based on the project requirements. Only return a single word: 'node' or 'react'. Do not return anything extra.",
         },
       ],
-      model: "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      model: "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8", 
     });
 
     const content = response.choices?.[0]?.message?.content?.trim().toLowerCase();

@@ -32,7 +32,7 @@ app.post("/template", async (req, res) => {
                     content: "Return either 'node' or 'react' based on the project requirements. Only return a single word: 'node' or 'react'. Do not return anything extra.",
                 },
             ],
-            model: "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+            model: "mistralai/Mistral-7B-Instruct-v0.1"
         });
         const content = response.choices?.[0]?.message?.content?.trim().toLowerCase();
         if (content === "react") {
